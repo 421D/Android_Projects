@@ -2,13 +2,14 @@
 
 
 ### Project Overview
-This is an **Android finance management application** developed using **Java** in **Android Studio**. The app allows users to view a list of financial items, add new entries, and manage displayed content. It features a **splash screen**, **data-driven main interface**, and interactive UI components.  
+This is an **Android finance management application** developed using **Java** in **Android Studio**. The app enables users to view, add, and manage financial items in a structured list. 
+It integrates a **splash screen**, **data-driven main interface**, and an **interactive user interface** for real-time content updates.
 
 Key features:  
-- Splash screen with a short launch animation/video  
-- Main interface displays items with **image, title, and description** in a list  
-- Add new entries dynamically through input fields at the top of the main interface  
-- Local JSON-based data storage for content persistence  
+- Launch splash screen with short animation or MP4 intro video
+- The main dashboard lists items with images, titles, and descriptions
+- Supports dynamic addition of new entries via input fields at the top of the main view
+- Utilises local JSON-based data storage for persistence and offline functionality
 
 
 
@@ -16,32 +17,32 @@ Key features:
 
 ### Libraries & Tools
 - **Java 8+**: Core programming language  
-- **Android Studio**: IDE and build tools  
-- **Android SDK**: For UI components and system integration  
-- **RecyclerView**: Display lists efficiently  
-- **JSON**: Local data storage and retrieval  
-- **MediaPlayer**: Play MP4 video for splash screen  
+- **Android Studio**: IDE and Gradle build system
+- **Android SDK**: provides UI components and platform APIs
+- **RecyclerView**: efficient list rendering and item management
+- **JSON**: storage for user-generated content
+- **MediaPlayer**: handles MP4 playback in the splash screen
 
 
 
 ### Technical Details
 - **Activities & UI Flow**:  
-  - `SplashActivity` → short video splash screen  
-  - `MainActivity` → main dashboard, list display, data entry  
-  - `XianshiActivity` → additional display/activity for detailed view or other content  
+  - `SplashActivity`: displays a short introductory animation/video on launch
+  - `MainActivity`: main dashboard for displaying and adding entries
+  - `XianshiActivity`: auxiliary interface for extended content or details
 - **Data Management**:  
-  - `DayData.java` defines the data model  
-  - JSON file stores financial entries, loaded at app start  
-  - Adding a new entry updates the list in real-time  
+  - `DayData.java` defines the data model for financial items
+  - A JSON file stores all user-created entries and loads at startup
+  - When a new entry is added, the list updates dynamically without restarting the app
 - **Layouts**:  
-  - XML layout files separate UI from logic  
-  - Includes responsive design for multiple screen densities  
+  - XML layout files separate UI structure from logic
+  - Designed with responsive layouts for multiple screen densities
 - **Resource Management**:  
-  - `drawable` folders store icons, images  
-  - `mipmap` folders store app launcher icons for various screen densities  
-  - `values` folders manage strings, colors, dimensions  
+  - `drawable`: stores app images and icons
+  - `mipmap`: contains adaptive launcher icons for different resolutions
+  - `values`: manages strings, colours, and dimension resources
 
 
 ### Notes
-Originally developed during undergraduate study. 
-Project no longer actively maintained.
+This project was developed during my undergraduate studies as part of coursework.
+It is no longer actively maintained but demonstrates practical Android UI design, local data persistence, and user interaction handling in Java.
